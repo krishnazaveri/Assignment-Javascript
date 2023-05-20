@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment maths operations</title>
+</head>
+<body>
+
+  Enter 1st number:  <input type="text" id="num1"><br><br>
+  Enter 2st number:  <input type="text" id="num2"><br><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button>
+    <br><br>
+    Answer is<h1 id="res"></h1>
+
+    <script>
+        no1 =document.getElementById('num1');
+        no2= document.getElementById('num2');
+
+        result= document.getElementById('res');
+
+      function add()
+      {
+        result.innerHTML = Number(no1.value) + Number(no2.value);
+        
+      }
+
+      function sub()
+      {
+        result.innerHTML = Number(no1.value) - Number(no2.value);
+      }
+
+      function mul()
+      {
+        result.innerHTML = Number(no1.value) * Number(no2.value);
+      }
+
+      function div()
+      {
+        result.innerHTML = Number(no1.value) / Number(no2.value);
+      }
+
+      function mod()
+      {
+        result.innerHTML = Number(no1.value) % Number(no2.value);
+      }
+
+
+    </script>
+    
+</body>
+</html>

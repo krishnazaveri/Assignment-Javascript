@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment result</title>
+    <style>
+        h4 { display: inline;}
+    </style>
+</head>
+<body>
+
+    <h1>Marksheet for Information Technology</h1>
+    <h2>Enter Marks</h2>
+
+     1.C Language:  <input type="text" id="n1"><br><br>
+    2.C++ Language:  <input type="text" id="n2"><br><br>
+    3.Database:  <input type="text" id="n3"><br><br>
+    4.HTML:  <input type="text" id="n4"><br><br>
+    5.CSS:  <input type="text" id="n5"><br><br>
+    6.php:  <input type="text" id="n6"><br><br>
+    7.Core java:  <input type="text" id="n7"><br><br>
+
+    <button onclick="res()">Result</button>
+    <br><br>
+
+    total is&nbsp;<h4 id="res"></h4>/350<br>
+    Percentage is : <h3 id="percentage" ></h3>
+    
+
+    <script>
+        no1 =document.getElementById('n1');
+        no2= document.getElementById('n2');
+        no3= document.getElementById('n3');
+        no4= document.getElementById('n4');
+        no5= document.getElementById('n5');
+        no6= document.getElementById('n6');
+        no7= document.getElementById('n7');
+
+        result= document.getElementById('res');
+        per = document.getElementById('percentage')
+
+      function res()
+      {
+        result.innerHTML = Number(no1.value) + Number(no2.value) + Number(no3.value)+ Number(no4.value)+ Number(no5.value)+ Number(no6.value)+ Number(no7.value);
+
+       
+
+      }
+
+     
+      
+
+    </script>
+    
+</body>
+</html>
